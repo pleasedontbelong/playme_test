@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Play Me</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Play Me">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- iPhone5 specific viewport -->
+        <!-- width=device-width causes the iPhone 5 to letterbox the app, so
+			 we want to exclude it for iPhone 5 to allow full screen apps -->
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1,maximum-scale=1" media="(device-height: 568px)" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/smart-grid.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
+		<script data-main="js/main" src="js/libs/require/require.js"></script>
+        <script src="js/libs/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		 
+		<style id="customStyles" type="text/css"></style>
+		
+    </head>
+    
+    <body>
+    
+    	<div id="root"> <!-- ROOT (Application root container) -->
+			<div id="app-loader">
+				<div id="menu-panel"></div>
+				<div id="top-bar"></div>
+				<div id="content"></div>
+			</div>
+    		<div id="login"></div>
+    	</div> <!-- ROOT closure -->
+		
+		<div class="overlay">
+			<div style="height:100%; vertical-align: middle; display:inline-block;"></div>
+            <div class="spinner-wheel-box">
+                <img src="imgs/spinning-wheel-white.gif" alt="loading spinner">
+                <em>Please wait</em>
+                Loading...
+            </div>
+        </div>
+
+    </body>
+</html>

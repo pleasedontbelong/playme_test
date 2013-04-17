@@ -1,0 +1,71 @@
+<% _.each(users, function(user){ %>
+<div uid="<%= user.get('id') %>"  class="single"> <!-- SINGLE(x) (contain the currently displayed single's profile) -->
+	<div class="singlePics" id="singlePics<%= user.get('id') %>">
+		<img src="http://ks384914.kimsufi.com/assets/default_pic/<%= user.get('id') %>c.jpg" class="scalable" />
+	</div>
+	<div class="singleInfos" id="singleInfos<%= user.get('id') %>">
+		<div>
+			<div class="stars-container">
+				<ul>
+					<li style="float:left; width:44%; text-align:left;"><span class="nick"><%= user.get('nickname') %></span></li>
+					<li style="float:left; width:44%; text-align:left;"><%= user.get('graph') %></li>
+					<li style="float:left; width:12%; text-align:right;" class="details" id="details<%= user.get('id') %>" open="false"><img src="imgs/panel.png" style="height:100%" /></li>
+				</ul>
+			</div>
+			<div class="match-container">
+				
+			</div>
+			<div class="profile">
+				<div class="row">
+					<div class="columns five">Age</div>
+					<div class="columns seven text-right"><% if(user.get('birthdate')) { %><%= user.get('birthdate') %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Situation</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').emotive_status) { %><%= user.get('profile_attributes').emotive_status %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Ville</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').city) { %><%= user.get('profile_attributes').city %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Yeux</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').eye) { %><%= user.get('profile_attributes').eye %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Cheveux</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').hair) { %><%= user.get('profile_attributes').hair %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Silhouette</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').shape) { %><%= user.get('profile_attributes').shape %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Taille</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').height) { %><%= user.get('profile_attributes').height %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Poids</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').weight) { %><%= user.get('profile_attributes').weight %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Emploi</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').job) { %><%= user.get('profile_attributes').job %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Moi en 3 mots</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').three_words) { %><%= user.get('profile_attributes').three_words %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Je bois</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').alcool) { %><%= user.get('profile_attributes').alcool %><% } else { %> N/A <% } %></div>
+				</div>
+				<div class="row">
+					<div class="columns five">Je fume</div>
+					<div class="columns seven text-right"><% if(user.get('profile_attributes').tobacco) { %><%= user.get('profile_attributes').tobacco %><% } else { %> N/A <% } %></div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+<% }); %>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.playme.mobile"
+        versionCode="1" 
+        version   = "0.0.1">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Play Me</name>
+
+    <description>
+        Use Play Me and play for people you like on mobile 
+    </description>
+
+    <author href="http://www.gozup.net" email="youspamme@gozup.net">
+        Emmanuel Lemoine
+    </author>
+
+    <preference name="phonegap-version" value="2.3.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="OpenAllWhitelistURLsInWebView" value="yes" />
+    <preference name="stay-in-webview" value="true" />
+    <access origin="http://ks384914.kimsufi.com" />
+    <access origin="http://www.gozup.net" />
+    <icon src="img/icon.png" width="60" height="60" />
+    <feature name="http://api.phonegap.com/1.0/camera"/>  
+</widget>

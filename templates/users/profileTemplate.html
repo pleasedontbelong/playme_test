@@ -1,0 +1,73 @@
+<div id="scrollerProfile">
+	<div id="#profile">
+		<div>
+			<div class="columns six buttonon">Profil</div>
+			<div class="columns six buttonoff">Centre d'intérêts</div>
+		</div>
+		<div class="row">
+			<div class="columns five">Prénom</div>
+			<div class="columns seven text-right"><% if(data.user.firstname) { %><%= data.user.firstname %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Nom</div>
+			<div class="columns seven text-right"><% if(data.user.lastname) { %><%= data.user.lastname %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Pseudo</div>
+			<div class="columns seven text-right"><% if(data.user.nickname) { %><%= data.user.nickname %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Age</div>
+			<div class="columns seven text-right"><% if(data.user.birthdate) { %><%= data.user.birthdate %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Sexe</div>
+			<div class="columns seven text-right"><% if(data.user.sex != undefined) { %><%= data.user.sex %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Situation</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.emotive_status) { %><%= data.user.profile_attributes.emotive_status.label %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Ville</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.city) { %><%= data.user.profile_attributes.city.name %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Yeux</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.eye) { %><%= data.user.profile_attributes.eye.color %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Cheveux</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.hair) { %><%= data.user.profile_attributes.hair.color %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Silhouette</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.shape) { %><%= data.user.profile_attributes.shape.label %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Taille</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.height) { %><%= data.user.profile_attributes.height.label %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Poids</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.weight) { %><%= data.user.profile_attributes.weight.label %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Emploi</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.job) { %><%= data.user.profile_attributes.job %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Moi en 3 mots</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.three_words) { %><%= data.user.profile_attributes.three_words %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Je bois</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.alcool) { %><%= data.user.profile_attributes.alcool.label %><% } else { %> N/A <% } %></div>
+		</div>
+		<div class="row">
+			<div class="columns five">Je fume</div>
+			<div class="columns seven text-right"><% if(data.user.profile_attributes.tobacco) { %><%= data.user.profile_attributes.tobacco.label %><% } else { %> N/A <% } %></div>
+		</div>
+		
+	</div>
+</div>
